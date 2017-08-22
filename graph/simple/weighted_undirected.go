@@ -74,7 +74,7 @@ func (g *WeightedUndirectedGraph) RemoveNode(n graph.Node) {
 
 // NewWeightedEdge returns a new Edge from the source to the destination node.
 func (g *WeightedUndirectedGraph) NewWeightedEdge(from, to graph.Node, weight float64) graph.WeightedEdge {
-	return &Edge{F: from, T: to, W: weight}
+	return &WeightedEdge{F: from, T: to, W: weight}
 }
 
 // SetWeightedEdge adds an edge from one node to another. If the nodes do not exist, they are added.
